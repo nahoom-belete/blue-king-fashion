@@ -39,6 +39,11 @@ ul.quick-links a {
     padding: 0;
 }
 
+.socials-img {
+    width: 40px; 
+    height: 40px;
+}
+
 .copyright, .info-banner {
     background-color: #171B24;
     width: auto;
@@ -54,8 +59,27 @@ ul.quick-links a {
 }
 
 @media only screen and (max-width: 740px) {
-    .footer-headings, .footer-body, .nav-link, .copyright > h1 {
+    .footer-headings, .footer-body, .nav-link, .info-banner > h1, .copyright > h1 {
         font-size: 12px !important;
         line-height: normal;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .footer-headings, .footer-body, .nav-link, .info-banner > h1, .copyright > h1 {
+        font-size: 8px !important;
+        line-height: normal;
+    }
+    .footer-bg {
+        height: 600px;
+    }
+
+    .footer-inner {
+        height: 500px;
+    }
+
+    .socials-img {
+        width: 20px; 
+        height: 20px;
     }
   }
