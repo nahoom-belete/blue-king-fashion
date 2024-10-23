@@ -52,3 +52,10 @@ ul.quick-links a {
     font-size: 15px;
     line-height: 40px;
 }
+
+@media only screen and (max-width: 740px) {
+    .footer-headings, .footer-body, .nav-link, .copyright > h1 {
+        font-size: 12px !important;
+        line-height: normal;
+    }
+  }
