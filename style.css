@@ -6,22 +6,19 @@
 
 .footer-bg {
     background-color: #2A3141;
-    width: auto;
     height: 400px;
 }
 
 .footer-inner {
     background-color: #171B24;
-    width: auto;
     height: 300px;
-
 }
 
 .footer-headings{
     color: #FFF;
     font-family: "Poppins", sans-serif;
     font-size: 20px;
-    text-align: center;
+    width: fit-content;
 }
 
 a.nav-link, .footer-body {
@@ -29,11 +26,13 @@ a.nav-link, .footer-body {
     color: #E7E4E4;
     font-family: "Poppins", sans-serif;
     font-size: 18px;
-    text-align: left;
+    width: fit-content;
 }
 
 a:hover.nav-link {
     color: #FFF;
+    padding: 0;
+    margin: 0;
 }
 
 ul.quick-links a {
