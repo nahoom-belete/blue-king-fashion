@@ -110,3 +110,7 @@ ul.quick-links a {
     width: fit-content;
     margin-bottom: 50px;
   }
+
+  .card-container {
+    width: fit-content;
+  }
