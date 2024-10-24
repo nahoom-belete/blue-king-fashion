@@ -44,7 +44,7 @@ ul.quick-links a {
     height: 40px;
 }
 
-.copyright, .info-banner {
+.copyright, .info-banner, .page-title {
     background-color: #171B24;
     width: auto;
     height: 128px;
@@ -82,4 +82,31 @@ ul.quick-links a {
         width: 20px; 
         height: 20px;
     }
+  }
+
+  /*Catalogue specific styles*/
+  .product-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 0;
+  }
+
+  .page-title {
+    height: 100px !important;
+    text-align: left !important;
+  }
+
+  .page-title h1{
+    color: #E7E4E4;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .card {
+    border-radius: 10px;
+    height:fit-content;
+    width: fit-content;
+    margin-bottom: 50px;
   }
