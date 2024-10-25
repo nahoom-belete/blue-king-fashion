@@ -109,8 +109,15 @@ ul.quick-links a {
     height:fit-content;
     width: fit-content;
     margin-bottom: 50px;
+    background-color: #c8c9ca;
   }
 
   .card-container {
     width: fit-content;
+  }
+  @media (max-width: 576px) {
+    .center-xs .col {
+      max-width: 80%; /* Adjust width as needed */
+      margin: 0 auto;
+    }
   }
