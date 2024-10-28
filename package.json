@@ -1,0 +1,16 @@
+{
+  "name": "blue-king-fashion",
+  "version": "1.0.0",
+  "description": "A website for a retail store",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nahoom Belete",
+  "license": "ISC",
+  "dependencies": {
+    "create-index": "^2.6.0",
+    "express": "^4.21.1",
+    "node": "^23.1.0"
+  }
+}
