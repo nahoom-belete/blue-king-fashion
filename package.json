@@ -9,7 +9,6 @@
   "author": "Nahoom Belete",
   "license": "ISC",
   "dependencies": {
-    "create-index": "^2.6.0",
     "express": "^4.21.1",
     "node": "^23.1.0"
   }

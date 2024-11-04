@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .info-banner {
     height: 50px !important;
@@ -93,6 +93,7 @@ ul.quick-links a {
     height: 200px;
     border-radius: 10px;
     padding: 0;
+    margin: 0;
   }
 
   .page-title {
@@ -109,18 +110,15 @@ ul.quick-links a {
 
   .card {
     border-radius: 10px;
-    height:fit-content;
-    width: fit-content;
-    margin-bottom: 50px;
+    /* height:fit-content;
+    width: fit-content; */
+    /* margin-bottom: 50px; */
     background-color: #c8c9ca;
+    width: 18rem;
   }
 
-  .card-container {
-    width: fit-content;
-  }
-  @media (max-width: 576px) {
-    .center-xs .col {
-      max-width: 80%; /* Adjust width as needed */
-      margin: 0 auto;
+  /* @media only screen and (min-width: 576px) {
+    .card {
+        width: 15rem;
     }
-  }
+  } */
