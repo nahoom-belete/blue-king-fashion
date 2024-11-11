@@ -9,6 +9,8 @@
   "author": "Nahoom Belete",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.7.7",
+    "browserfy": "^1.0.0",
     "ejs": "^3.1.10",
     "express": "^4.21.1",
     "node": "^23.1.0"

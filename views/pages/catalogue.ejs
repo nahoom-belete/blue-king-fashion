@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <%- include('../partials/head'); %>
+        <script defer src="/public/scripts/catalogue.js"></script>
         <title>Catalogue</title>
     </head>
     <body>
@@ -15,77 +16,7 @@
                 </div>
             </section>
             <section class="products-container pt-5 d-flex flex-column align-items-center justify-content-center gap-5">
-                <div class="container">
-                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                        <div class="col d-flex align-items-center justify-content-center">
-                            <div class="card">
-                                <img src="/public/images/catalogue/headwear/headwear_category.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Headwear</h5>
-                                    <p class="card-text">A variety of hats, caps and head accessories are available in various colours.</p>
-                                    <a href="#" class="btn btn-primary">View</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col d-flex align-items-center justify-content-center">
-                            <div class="card">
-                                <img src="/public/images/catalogue/headwear/headwear_category.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Torso</h5>
-                                    <p class="card-text">A variety of hats, caps and head accessories are available in various colours.</p>
-                                    <a href="#" class="btn btn-primary">View</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col d-flex align-items-center justify-content-center">
-                            <div class="card">
-                                <img src="/public/images/catalogue/headwear/headwear_category.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Trousers and Shorts</h5>
-                                    <p class="card-text">A variety of hats, caps and head accessories are available in various colours.</p>
-                                    <a href="#" class="btn btn-primary">View</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col d-flex align-items-center justify-content-center">
-                            <div class="card">
-                                <img src="/public/images/catalogue/headwear/headwear_category.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Underwear</h5>
-                                    <p class="card-text">A variety of hats, caps and head accessories are available in various colours.</p>
-                                    <a href="#" class="btn btn-primary">View</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col d-flex align-items-center justify-content-center">
-                            <div class="card">
-                                <img src="/public/images/catalogue/headwear/headwear_category.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Footwear</h5>
-                                    <p class="card-text">A variety of hats, caps and head accessories are available in various colours.</p>
-                                    <a href="#" class="btn btn-primary">View</a>
-                                </div>
-                            </div>
-                        </div>   
-                            
-                    </div>
-                </div>
-                     
-                <nav aria-label="...">
-                    <ul class="pagination">
-                      <li class="page-item disabled">
-                        <span class="page-link">Previous</span>
-                      </li>
-                      <li class="page-item active" aria-current="page">
-                        <span class="page-link">1</span>
-                      </li>
-                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">Next</a>
-                      </li>
-                    </ul>
-                  </nav>
+                <%- include('../partials/productBrowser'); %>
             </section>
         </main>
         <footer>
