@@ -101,9 +101,10 @@ ul.quick-links a {
 }
 
 .page-title h1{
-    color: #E7E4E4;
+    color: #FFF;
     font-family: "Poppins", sans-serif;
-    font-size: 30px;
+    font-weight: bolder;
+    font-size: 45px;
     line-height: 40px;
 }
 
@@ -111,6 +112,29 @@ ul.quick-links a {
     border-radius: 10px;
     background-color: #c8c9ca;
     width: 18rem;
+}
+
+.nav-link-container {
+    width: max-content;
+    height: max-content;
+    background-color: #171B24;
+    border-radius: 100px;
+    padding: 5px
+}
+
+.nav-link-container a {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.brand-img {
+    width: 80px;
+    height: 80px;
+}
+
+.bg-light {
+    background-color: #FFF !important;
 }
 
 /* @media only screen and (min-width: 576px) {

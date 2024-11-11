@@ -5,7 +5,6 @@ const { getProductImageList } = require("../public/scripts/catalogue_server.js")
 
 router.get('/catalogue', function(req,res) {
     var pList = getProductImageList("footwear")
-    console.log(typeof(pList))
     res.render('pages/catalogue', {
         img1: "./public/images/catalogue/footwear/" + pList[0],
         img2: "./public/images/catalogue/footwear/" + pList[1],
