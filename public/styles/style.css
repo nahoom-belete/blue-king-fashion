@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+:root body {
+    font-family: 'Panton-regular', Helvetica, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    text-transform: none;
+    color: #000000;
+    line-height: 1.6em;
+    overflow: auto;
+    background-color: #ffffff;
+}
+
+.navbar {
+    border-bottom: #c8c9ca solid 1px;
+}
+
 .nav-link {
     color: #0B0b1b !important;
     position: relative;
@@ -8,9 +24,8 @@
     transition: color ease 0.2s;
 }
 
-.nav-link:hover {
+.nav-link:hover, .brand-img:hover {
     color: #0b0b1bc7 !important ;
-    top: -10px;
 }
 
 .carousel-item { 
@@ -45,17 +60,9 @@
 
 .nav-link, .footer-body {
     text-decoration: none;
-    color: #E7E4E4;
-    font-family: "Poppins", sans-serif;
     font-size: 15px;
     font-weight: 600;
     width: fit-content;
-}
-
-a:hover.nav-link {
-    color: #FFF;
-    padding: 0;
-    margin: 0;
 }
 
 ul.quick-links a {
@@ -156,7 +163,7 @@ ul.quick-links a {
 
 .brand-img {
     width: 300px;
-    height: 100px;
+    height: 70px;
 }
 
 .brand-title h1, .brand-title h2 {
