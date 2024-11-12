@@ -10,6 +10,6 @@ app.use("/public", express.static('public'));
 app.use('/', homeRoutes);
 app.use('/', catalogueRoutes);
 
-app.listen(3030);
+app.listen(8080);
 
 console.log("Server started")
