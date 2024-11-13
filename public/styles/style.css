@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Anton&family=Doto:wght@100..900&display=swap'); */
+
 
 :root body {
-    font-family: 'Panton-regular', Helvetica, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+    font-family: 'Inter', Helvetica, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
     text-transform: none;
-    color: #000000;
+    color: #0B0b1b;
     line-height: 1.6em;
     overflow: auto;
     background-color: #ffffff;
@@ -24,8 +27,8 @@
     transition: color ease 0.2s;
 }
 
-.nav-link:hover, .brand-img:hover {
-    color: #0b0b1bc7 !important ;
+.nav-link:hover {
+    color: #242458 !important ;
 }
 
 .carousel-item { 
@@ -37,22 +40,15 @@
 }
 
 .info-banner {
-    height: 50px !important;
+    height: 40px !important;
 }
 
 .footer-bg {
-    background-color: #2A3141;
+    background-color: #ff2b3d;
     height: 400px;
 }
 
-.footer-inner {
-    background-color: #171B24;
-    height: 300px;
-}
-
 .footer-headings{
-    color: #FFF;
-    font-family: "Poppins", sans-serif;
     font-size: 20px;
     font-weight: 600;
     width: fit-content;
@@ -60,8 +56,8 @@
 
 .nav-link, .footer-body {
     text-decoration: none;
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 900;
     width: fit-content;
 }
 
@@ -74,8 +70,8 @@ ul.quick-links a {
     height: 40px;
 }
 
-.copyright, .info-banner, .page-title {
-    background-color: #07363c;
+.copyright, .info-banner {
+    background-color: #111923;
     width: auto;
     height: 128px;
     text-align: center; 
@@ -83,7 +79,6 @@ ul.quick-links a {
 
 .copyright h1, .info-banner h1 {
     color: #E7E4E4;
-    font-family: "Poppins", sans-serif;
     font-size: 15px;
     font-weight: 900;
     line-height: 40px;
@@ -117,43 +112,29 @@ ul.quick-links a {
 
 /*Catalogue specific styles*/
 .product-img {
+    border-radius: 0px !important ;
     height: 15rem;
-    border-radius: 10px;
     padding: 0;
     margin: 0;
 }
 
-.page-title {
-    height: 100px !important;
-    text-align: left !important;
-}
-
 .page-title h1{
-    color: #FFF;
-    font-family: "Poppins", sans-serif;
     font-weight: bolder;
     font-size: 45px;
-    line-height: 40px;
 }
 
 .card {
-    border-radius: 10px;
-    background-color: #c8c9ca;
+    border: none;
+    background-color: #ffffff !important;
     width: 18rem;
 }
 
-.nav-link-container {
-    width: max-content;
-    height: max-content;
-    background-color: #171B24;
-    border-radius: 100px;
-    padding: 5px
+.card-body {
+    background-color: #ffffff !important;
 }
 
-.nav-link-container a {
-    font-family: "Poppins", sans-serif;
-    font-size: 15px;
-    font-weight: 900;
+.product-img, .card, .card-img-top {
+    border-radius: 0px !important;
 }
 
 /* .brand-img {

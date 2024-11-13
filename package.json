@@ -4,7 +4,7 @@
   "description": "A website for a retail store",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon server.js"
+    "server": "start http://localhost:8080/ & nodemon server.js"
   },
   "author": "Nahoom Belete",
   "license": "ISC",
