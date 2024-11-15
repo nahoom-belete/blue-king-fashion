@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Anton&family=Doto:wght@100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 
 :root body {
-    font-family: 'Inter', Helvetica, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
-    font-weight: 400;
+    font-family: 'Lato', Helvetica, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+    font-weight: 200;
     font-style: normal;
     font-size: 16px;
     text-transform: none;
@@ -21,14 +22,11 @@
 
 .nav-link {
     color: #0B0b1b !important;
-    position: relative;
-    top: 0;
-    transition: top ease 0.2s;
     transition: color ease 0.2s;
 }
 
 .nav-link:hover {
-    color: #242458 !important ;
+    color: #ff2b3d !important ;
 }
 
 .carousel-item { 
@@ -37,6 +35,7 @@
 
 .carousel-img {
     height: inherit;
+    object-fit: cover;
 }
 
 .info-banner {
@@ -45,19 +44,18 @@
 
 .footer-bg {
     background-color: #ff2b3d;
-    height: 400px;
+    height: 300px;
 }
 
 .footer-headings{
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: 900;
     width: fit-content;
 }
 
 .nav-link, .footer-body {
-    text-decoration: none;
     font-size: 18px;
-    font-weight: 900;
+    font-weight: 600;
     width: fit-content;
 }
 
@@ -73,7 +71,7 @@ ul.quick-links a {
 .copyright, .info-banner {
     background-color: #111923;
     width: auto;
-    height: 128px;
+    height: 100px;
     text-align: center; 
 }
 
@@ -81,7 +79,7 @@ ul.quick-links a {
     color: #E7E4E4;
     font-size: 15px;
     font-weight: 900;
-    line-height: 40px;
+    line-height: 25px;
 }
 
 @media only screen and (max-width: 740px) {
@@ -142,6 +140,10 @@ ul.quick-links a {
     height: 80px;
 } */
 
+/* .brand-title {
+    border: #0B0b1b 4px solid;
+} */
+
 .brand-img {
     width: 300px;
     height: 70px;
@@ -174,3 +176,37 @@ ul.quick-links a {
         width: 15rem;
     }
 } */
+
+/*Banner styles*/
+.banner {
+    height: 200px;
+    background-color: #f0f0f0;
+}
+
+.banner > p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.custom-link {
+    background-color: transparent;
+    border: solid rgb(6, 16, 56) 4px;
+    border-radius: 8px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 15px;
+    font-weight: 600;
+    transition: ease 0.5s;
+    text-decoration: none;
+    color: inherit;
+}
+
+.custom-link:hover {
+    background-color: #ff2b3d;
+}
+
+.subtitle {
+    border-bottom: solid #ff2b3d;
+    width: fit-content;
+    height: fit-content;
+}
