@@ -35,7 +35,7 @@
 
 .carousel-img {
     height: inherit;
-    object-fit: cover;
+    object-fit: fit;
 }
 
 .info-banner {
@@ -209,4 +209,35 @@ ul.quick-links a {
     border-bottom: solid #ff2b3d;
     width: fit-content;
     height: fit-content;
+}
+
+.card-collection {
+    width: auto;
+    height: 800px;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+#collection-inner {
+    width: 1000px;
+    height: fit-content;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.fade-out {
+    transition: 1s;
+    transform: translateX(-300px);   
+}
+
+#slide {
+    z-index: 2;
 }

@@ -5,6 +5,7 @@ var catalogueRoutes = require('./routes/catalogueRoutes.js');
 
 app.set('view engine', 'ejs');
 
+//To access resources in public folder
 app.use("/public", express.static('public'));
 
 app.use('/', homeRoutes);

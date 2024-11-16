@@ -2,7 +2,6 @@
 var endOfList = false;
 var beginningOfList = true;
 
-
 function goToNextPage() {
     if(endOfList == true) {
         return;
