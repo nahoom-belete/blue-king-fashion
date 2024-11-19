@@ -1,8 +1,6 @@
-<!-- <div class="container-fluid info-banner d-flex justify-content-center align-items-center">
-    <h1>Trading Hours | Mon - Sat: 08:00 - 17:00 | Sun: 08:00 - 15:00</h1>
-</div> -->
-<div class="container-fluid p-0 m-0">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ps-5 pb-2 pt-2 my-0">
+
+<div class="container-fluid p-0 m-0 navig">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ps-5 pb-2 pt-2 my-0 ">
         <a class="navbar-brand ms-5 p-0 my-0 brand-title" href="/">
             <img class="brand-img" src="/public/images/logo.svg">
         </a>
@@ -23,6 +21,10 @@
                         <li><a class="nav-link dropdown-item" href="/catalogue">Skirts</a></li>
                         <li><a class="nav-link dropdown-item" href="/catalogue">Jeans</a></li>
                         <li><a class="nav-link dropdown-item" href="/catalogue">Shirts</a></li>
+                        <form id="shoe-form"action="/catalogue" method="POST">
+                            <input type="hidden" name="category" value="footwear">
+                            <li><a class="nav-link dropdown-item" onclick="document.getElementById('shoe-form').submit();">Shoes</a></li>
+                        </form>       
                       </ul>
                 </li>
                 <li class="nav-item">
@@ -37,4 +39,7 @@
             </ul>
         </div>
     </nav>
+</div>
+<div class="container-fluid info-banner d-flex justify-content-center align-items-center">
+    <h1>Trading Hours | Mon - Sat: 08:00 - 17:00 | Sun: 08:00 - 15:00</h1>
 </div>

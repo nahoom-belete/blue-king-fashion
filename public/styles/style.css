@@ -59,10 +59,6 @@
     width: fit-content;
 }
 
-ul.quick-links a {
-    padding: 0;
-}
-
 .socials-img {
     width: 40px; 
     height: 40px;
@@ -109,6 +105,9 @@ ul.quick-links a {
 }
 
 /*Catalogue specific styles*/
+.subtitle > h1::first-letter {
+    text-transform: capitalize;
+}
 .product-img {
     border-radius: 0px !important ;
     height: 15rem;
@@ -135,62 +134,31 @@ ul.quick-links a {
     border-radius: 0px !important;
 }
 
-/* .brand-img {
-    width: 80px;
-    height: 80px;
-} */
-
-/* .brand-title {
-    border: #0B0b1b 4px solid;
-} */
-
 .brand-img {
     width: 300px;
     height: 70px;
 }
 
-.brand-title h1, .brand-title h2 {
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    color: #171B24;
-}
-
-.brand-title h1 {
-    font-size: 25px;
-    text-align: center;
-}
-
-.brand-title h2 {
-    font-size: 18px;
-    text-align: center;
-}
-
 .bg-light {
-    background-color: #FFF !important;
+    background-color: #ffffff !important;
 }
 
-/* @media only screen and (min-width: 576px) {
-    .card {
-        width: 15rem;
-    }
-} */
-
-/*Banner styles*/
+/*Banner specific styles*/
 .banner {
-    height: 200px;
-    background-color: #f0f0f0;
-}
+    height: 250px;
+    background-color: #111923;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}   
 
 .banner > p {
     font-size: 20px;
     text-align: center;
+    color: #6db432;
 }
 
 .custom-link {
     background-color: transparent;
-    border: solid rgb(6, 16, 56) 4px;
+    border: solid #6db432 4px;
     border-radius: 8px;
     width: fit-content;
     height: fit-content;
@@ -198,33 +166,38 @@ ul.quick-links a {
     font-weight: 600;
     transition: ease 0.5s;
     text-decoration: none;
-    color: inherit;
+    color: #6db432;
 }
 
 .custom-link:hover {
-    background-color: #ff2b3d;
+    background-color: #6db432;
+    color: #142e52;
 }
 
+
+/*New apparel specific styles*/
 .subtitle {
     border-bottom: solid #ff2b3d;
     width: fit-content;
     height: fit-content;
 }
 
+
 .card-collection {
     width: auto;
-    height: 800px;
+    height: 600px;
     overflow: hidden;
     white-space: nowrap;
     display: flex;
     justify-content: center;
-    padding: 0;
+    padding: 50px;
     margin: 0;
 }
 
 #collection-inner {
-    width: 1000px;
-    height: fit-content;
+    padding-top: 10px;
+    width: auto;
+    height: 500;
     overflow: hidden;
     white-space: nowrap;
     display: flex;
@@ -234,10 +207,14 @@ ul.quick-links a {
 }
 
 .fade-out {
-    transition: 1s;
+    transition: 0.5s;
     transform: translateX(-300px);   
 }
 
-#slide {
+#prv {
+    z-index: 2;
+}
+
+#nxt {
     z-index: 2;
 }
