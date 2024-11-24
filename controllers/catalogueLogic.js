@@ -1,16 +1,16 @@
 const fs = require("fs");
 
+var pList = []
+var listSize = 0;
+var currIndex = 0;
+var pageSize = 8;
+
+
 const catalogueView = (req, res) => {
     const { category } = req.body;
-    const pList = getProductImageList(category);
-    res.render('pages/catalogue',{
-        subtitle: category,
-        img1: imagePaths[category] + pList[0],
-        img2: imagePaths[category] + pList[1],
-        img3: imagePaths[category] + pList[2],
-        img4: imagePaths[category] + pList[3],
-        img5: imagePaths[category] + pList[4],
-    });
+    pList = getProductImageList(category);
+    listSize = pList.length;
+    displayPage(req, res, category);
 }
  
 imagePaths = {
@@ -27,6 +27,22 @@ const getProductImageList = (category) => {
         } 
     });
     return pList
+}
+
+const displayPage = (req, res, category) => {
+    var endIndex = currIndex + pageSize;
+    if(endIndex > listSize) {
+        var correction = endIndex - listSize;
+        endIndex -= correction;
+    }
+    res.render('pages/catalogue',{
+        imgPath: imagePaths[category],
+        subtitle: category,
+        pgList: pList,
+        cIndex: currIndex,
+        eIndex: endIndex
+    });
+    currIndex = endIndex;
 }
 
 module.exports = { catalogueView }
