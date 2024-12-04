@@ -3,6 +3,7 @@ var endOfList = false;
 var beginningOfList = true;
 
 function goToNextPage() {
+    loadNextProducts();
     if(endOfList == true) {
         return;
     }
@@ -22,7 +23,7 @@ function goToNextPage() {
         item.nextElementSibling.classList.add("disabled");
         endOfList = true;
     }
-    loadNextProducts();
+
 }
 
 function goToPreviousPage() {
@@ -47,5 +48,5 @@ function goToPreviousPage() {
 }
 
 function loadNextProducts() {
-    alert(getProductImageList("footwear"));
+    document.getElementById('next-form').submit();
 }
